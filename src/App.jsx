@@ -1,9 +1,12 @@
-import BasicReactRouter from "./basicReactRouter"
+// import BasicReactRouter from "./basicReactRouter"
+import Layout from './components/layout'
 function App() {
 
   return (
     <>
-    <BasicReactRouter />
+    {/* <BasicReactRouter /> */}
+
+    <Layout />
     </>
   )
 }
