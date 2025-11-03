@@ -1,4 +1,4 @@
-import { Route, Routes,Link } from "react-router"
+import { Route, Routes,NavLink } from "react-router"
 import Contact from "./contac"
 import About from './about'
 import College from './college'
@@ -14,10 +14,10 @@ function Layout() {
                     <h1>Logo</h1>
                 </div>
                 <div className={style.links}>
-                    <Link to='/'>Home</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/contact'>Contact</Link>
-                    <Link to='/college'>College</Link>
+                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/contact'>Contact</NavLink>
+                    <NavLink to='/college'>College</NavLink>
                 </div>
             </div>
             <Routes>
