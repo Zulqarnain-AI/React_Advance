@@ -1,28 +1,38 @@
 // import BasicReactRouter from "./basicReactRouter"
 // import Layout from './components/layout'
 // import './App.css'
-import { useEffect, useState } from "react"
-import getdata from "./Api"
+// import { useEffect, useState } from "react"
+// import getdata from "./Api"
+import College from '/context_api/college.jsx';
+import data from '/context_api/contextdata.jsx';
 function App() {
-  const [data,setData]=useState("");
-useEffect(()=>{
- getdata().then((posts)=>setData(posts));
-},[])
+  //   const [data,setData]=useState("");
+  // useEffect(()=>{
+  //  getdata().then((posts)=>setData(posts));
+  // },[])
+  
+
   return (
     <>
-    {/* <BasicReactRouter /> */}
+      {/* <BasicReactRouter /> */}
 
-    {/* <Layout /> */}
-    {/* <h1 class="text-9xl font-bold underline ">hello</h1> */}
-    {/* <h3>{response}</h3> */}
-    <div>
+      {/* <Layout /> */}
+      {/* <h1 class="text-9xl font-bold underline ">hello</h1> */}
+      {/* <h3>{response}</h3> */}
+      {/* <div>
 
     {
       data? data.map(item=><li>{item.title}</li>) :"no data"
     }
-    </div>
+    </div> */}
+<data.Provider value={'ali hassan'}>
+  <h1>hello</h1>
+<College />
+</data.Provider>
+
     </>
   )
 }
+
 
 export default App
