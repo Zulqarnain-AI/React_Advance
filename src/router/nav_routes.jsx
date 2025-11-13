@@ -5,6 +5,7 @@ import Contact from './contact.jsx';
 import PageNotFound from './PnotF.jsx';
 import College from './college.jsx';
 import Navbar from './navbar.jsx';
+import List from './list.jsx';
 function NavRouter(){
     return(
         <>
@@ -13,6 +14,11 @@ function NavRouter(){
             <Route path='/' element={<Home />} />
             <Route path='/about' element ={<About />} />
             <Route path='/contact' element = {<Contact />} />
+            </Route>
+
+            <Route path='/user' element ={<List />} >
+            <Route path= 'user/:id' element={<h1>this is user </h1>}/>
+
             </Route>
 
             <Route path='/college' element ={<College />} >
