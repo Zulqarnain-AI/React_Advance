@@ -5,9 +5,11 @@
 // import getdata from "./Api"
 // import College from '/context_api/college.jsx';
 // import data from '/context_api/contextdata.jsx';
-import List from './router/list.jsx'
-import NavRouter from './router/nav_routes.jsx'
-import Navbar from './router/navbar.jsx'
+// import List from './router/list.jsx'
+// import NavRouter from './router/nav_routes.jsx'
+// import Navbar from './router/navbar.jsx'
+
+import FatchData from "./API_set/fatchdata"
 
 function App() {
   //   const [data,setData]=useState("");
@@ -33,8 +35,8 @@ function App() {
   <h1>hello</h1>
 <College />
 </data.Provider> */}
-    <NavRouter />
-  
+    {/* <NavRouter /> */}
+  <FatchData />
     </>
   )
 }
