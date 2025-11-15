@@ -8,10 +8,14 @@
 // import List from './router/list.jsx'
 // import NavRouter from './router/nav_routes.jsx'
 // import Navbar from './router/navbar.jsx'
-
+import { Routes, Route } from 'react-router'
+import Details from './API_set/Details.jsx'
+import { useState } from "react"
 import FatchData from "./API_set/fatchdata"
 
 function App() {
+  const [items, setItems] = useState([])
+
   //   const [data,setData]=useState("");
   // useEffect(()=>{
   //  getdata().then((posts)=>setData(posts));
@@ -35,8 +39,12 @@ function App() {
   <h1>hello</h1>
 <College />
 </data.Provider> */}
-    {/* <NavRouter /> */}
-  <FatchData />
+      {/* <NavRouter /> */}
+      
+      <Routes>
+        <Route path='/' element={<FatchData items={items} setItems={setItems} />} />
+        
+      </Routes>
     </>
   )
 }
