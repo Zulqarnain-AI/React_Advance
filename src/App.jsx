@@ -40,10 +40,11 @@ function App() {
 <College />
 </data.Provider> */}
       {/* <NavRouter /> */}
-      
+
       <Routes>
         <Route path='/' element={<FatchData items={items} setItems={setItems} />} />
-        
+        <Route path='/:id' element={<Details />} />
+
       </Routes>
     </>
   )
