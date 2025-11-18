@@ -9,12 +9,15 @@
 // import NavRouter from './router/nav_routes.jsx'
 // import Navbar from './router/navbar.jsx'
 import { Routes, Route } from 'react-router'
-import Details from './API_set/Details.jsx'
-import { useState } from "react"
-import FatchData from "./API_set/fatchdata"
+// import Details from './API_set/Details.jsx'
+// import FatchData from "./API_set/fatchdata"
+// import { useState } from "react"
+import Home from "./CRUD/home"
+import FetchData from "./CRUD/FetchData"
+import AddData from './CRUD/AddData'
 
 function App() {
-  const [items, setItems] = useState([])
+  // const [items, setItems] = useState([])
 
   //   const [data,setData]=useState("");
   // useEffect(()=>{
@@ -40,12 +43,20 @@ function App() {
 <College />
 </data.Provider> */}
       {/* <NavRouter /> */}
-
+{/* 
       <Routes>
         <Route path='/' element={<FatchData items={items} setItems={setItems} />} />
         <Route path='/:id' element={<Details />} />
 
+      </Routes> */}
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/fetchdata' element= {<FetchData />} />
+        <Route path='/adddata' element= {<AddData />} />
+        <Route />
       </Routes>
+     
     </>
   )
 }
