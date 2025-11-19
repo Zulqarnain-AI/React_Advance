@@ -15,6 +15,7 @@ import { Routes, Route } from 'react-router'
 import Home from "./CRUD/home"
 import FetchData from "./CRUD/FetchData"
 import AddData from './CRUD/AddData'
+import EditData from './CRUD/EditData'
 
 function App() {
   // const [items, setItems] = useState([])
@@ -54,6 +55,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/fetchdata' element= {<FetchData />} />
         <Route path='/adddata' element= {<AddData />} />
+        <Route path='/edit/:id' element= {<EditData />} />
         <Route />
       </Routes>
      
