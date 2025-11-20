@@ -8,14 +8,16 @@
 // import List from './router/list.jsx'
 // import NavRouter from './router/nav_routes.jsx'
 // import Navbar from './router/navbar.jsx'
-import { Routes, Route } from 'react-router'
+// import { Routes, Route } from 'react-router'
 // import Details from './API_set/Details.jsx'
 // import FatchData from "./API_set/fatchdata"
 // import { useState } from "react"
-import Home from "./CRUD/home"
-import FetchData from "./CRUD/FetchData"
-import AddData from './CRUD/AddData'
-import EditData from './CRUD/EditData'
+// import Home from "./CRUD/home"
+// import FetchData from "./CRUD/FetchData"
+// import AddData from './CRUD/AddData'
+// import EditData from './CRUD/EditData'
+
+import UseReducerHook from "./use_reducer_hook"
 
 function App() {
   // const [items, setItems] = useState([])
@@ -51,14 +53,14 @@ function App() {
 
       </Routes> */}
 
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/fetchdata' element= {<FetchData />} />
         <Route path='/adddata' element= {<AddData />} />
         <Route path='/edit/:id' element= {<EditData />} />
         <Route />
-      </Routes>
-     
+      </Routes> */}
+     <UseReducerHook />
     </>
   )
 }
